@@ -13,7 +13,7 @@ export default function Header({ isScrolled }: HeaderProps) {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
+        <div className="flex items-center gap-2">
           <div className="w-8 h-8 relative">
             <svg
               viewBox="0 0 100 100"
@@ -37,16 +37,16 @@ export default function Header({ isScrolled }: HeaderProps) {
             </svg>
           </div>
           <span className="text-xl font-bold text-foreground">Starcode</span>
-        </Link>
+        </div>
 
         <nav className="hidden md:flex items-center gap-8">
-          <Link href="/#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <Link href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
             About
           </Link>
-          <Link href="/#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <Link href="#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
             Services
           </Link>
-          <Link href="/#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+          <Link href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
             Solutions
           </Link>
           <Link href="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
